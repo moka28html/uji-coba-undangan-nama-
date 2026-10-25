@@ -1,23 +1,291 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syukuran Wisuda dan Ulang Tahun</title><link rel="stylesheet" href="style.css"></head>
-<body><main>
-<section class="hero">
-<img class="poster" src="assets/background.png" alt="Poster Syukuran Wisuda dan Ulang Tahun">
-<div class="invite-card"><p class="eyebrow">Kepada Yth</p><h1 id="namaTamu">Bapak/Ibu/Saudara/i</h1>
-<p>Dengan penuh sukacita, kami mengundang Anda untuk hadir dan berbagi kebahagiaan bersama kami.</p>
-<a class="button" href="#detail">Buka Detail Acara</a></div>
-<p class="scroll-note">Gulir ke bawah untuk melihat detail acara ↓</p></section>
-<section class="details" id="detail"><p class="eyebrow">MOMEN PENUH SYUKUR</p><h2>Syukuran Wisuda &amp; Ulang Tahun</h2>
-<p class="intro">Merupakan sukacita bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk merayakan momen istimewa ini bersama keluarga kami.</p>
-<div class="event-grid">
-<article class="event"><div class="icon">🎓</div><h3>Syukuran Wisuda</h3><p><strong>Beathris Novalia Marci Baitanu, S.Tr.Kep., Ns.</strong></p><p>Mensyukuri penyertaan Tuhan dalam menyelesaikan pendidikan.</p></article>
-<article class="event"><div class="icon">🎂</div><h3>Ulang Tahun</h3><p><strong>Diego Bernado Romansinya Baitanu</strong></p><p>Merayakan pertambahan usia dengan penuh sukacita.</p></article></div>
-<div class="info">
-<div><span>📅</span><section><strong>Hari / Tanggal</strong><p id="tanggalAcara"></p></section></div>
-<div><span>⏰</span><section><strong>Waktu</strong><p id="waktuAcara"></p></section></div>
-<div><span>📍</span><section><strong>Tempat</strong><p id="tempatAcara"></p></section></div></div>
-<div class="actions"><a class="button" id="mapsButton" href="#" target="_blank" rel="noopener">Buka Google Maps</a>
-<a class="button outline" id="rsvpButton" href="#">Konfirmasi via WhatsApp</a></div>
-<p class="closing">Kehadiran dan doa restu Bapak/Ibu/Saudara/i merupakan kebahagiaan bagi kami.<br><strong>Tuhan memberkati.</strong></p>
-</section><footer>Undangan digital • Syukuran Wisuda dan Ulang Tahun</footer></main><script src="script.js"></script></body></html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Syukuran Wisuda dan Ulang Tahun</title>
+
+    <!-- DESKRIPSI WEBSITE -->
+    <meta name="description"
+          content="Undangan Syukuran Wisuda Beathris dan Ulang Tahun Diego. Kami mengundang Anda untuk berbagi sukacita bersama keluarga kami.">
+
+    <!-- FOTO DAN INFORMASI PRATINJAU WHATSAPP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="Syukuran Wisuda dan Ulang Tahun">
+
+    <meta property="og:description"
+          content="Dengan penuh sukacita, kami mengundang Anda untuk hadir dalam acara Syukuran Wisuda dan Ulang Tahun.">
+
+    <!-- GANTI JIKA ALAMAT WEBSITE BERUBAH -->
+    <meta property="og:url"
+          content="https://moka28html.github.io/uji-coba-undangan-nama-/">
+
+    <!-- FOTO PRATINJAU WHATSAPP -->
+    <meta property="og:image"
+          content="https://moka28html.github.io/uji-coba-undangan-nama-/assets/preview-undangan.jpg">
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main>
+
+    <!-- =========================
+         BAGIAN PEMBUKA UNDANGAN
+         ========================= -->
+    <section class="hero" id="beranda">
+
+        <!-- GAMBAR POSTER UTAMA -->
+        <img
+            class="poster"
+            src="assets/background.png"
+            alt="Poster Syukuran Wisuda dan Ulang Tahun"
+        >
+
+        <!-- KARTU NAMA TAMU -->
+        <div class="invite-card">
+
+            <p class="eyebrow">KEPADA YTH.</p>
+
+            <!-- NAMA TAMU BERUBAH BERDASARKAN LINK -->
+            <h1 id="namaTamu">Bapak/Ibu/Saudara/i</h1>
+
+            <p>
+                Dengan penuh sukacita, kami mengundang Anda
+                untuk hadir dan berbagi kebahagiaan bersama kami.
+            </p>
+
+            <a class="button" href="#detail">
+                Buka Detail Acara
+            </a>
+
+        </div>
+
+        <p class="scroll-note">
+            Gulir ke bawah untuk melihat detail acara ↓
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         BAGIAN DETAIL ACARA
+         ========================= -->
+    <section class="details" id="detail">
+
+        <p class="eyebrow">MOMEN PENUH SYUKUR</p>
+
+        <h2>Syukuran Wisuda &amp; Ulang Tahun</h2>
+
+        <p class="intro">
+            Merupakan sukacita bagi kami apabila Bapak/Ibu/Saudara/i
+            berkenan hadir untuk merayakan momen istimewa ini
+            bersama keluarga kami.
+        </p>
+
+
+        <!-- =========================
+             FOTO DAN NAMA YANG DIRAYAKAN
+             ========================= -->
+        <div class="event-grid">
+
+            <!-- FOTO WISUDA -->
+            <article class="event">
+
+                <img
+                    class="event-photo"
+                    src="assets/foto-wisuda.jpg"
+                    alt="Foto Beathris saat wisuda"
+                    loading="lazy"
+                >
+
+                <div class="icon">🎓</div>
+
+                <h3>Syukuran Wisuda</h3>
+
+                <p>
+                    <strong>
+                        Beathris Novalia Marci Baitanu, S.Tr.Kep., Ns.
+                    </strong>
+                </p>
+
+                <p>
+                    Mensyukuri penyertaan Tuhan dalam menyelesaikan pendidikan.
+                </p>
+
+            </article>
+
+
+            <!-- FOTO ULANG TAHUN -->
+            <article class="event">
+
+                <img
+                    class="event-photo"
+                    src="assets/foto-ulang-tahun.jpg"
+                    alt="Foto Diego yang berulang tahun"
+                    loading="lazy"
+                >
+
+                <div class="icon">🎂</div>
+
+                <h3>Ulang Tahun</h3>
+
+                <p>
+                    <strong>
+                        Diego Bernado Romansinya Baitanu
+                    </strong>
+                </p>
+
+                <p>
+                    Merayakan pertambahan usia dengan penuh sukacita.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- =========================
+             GALERI FOTO
+             ========================= -->
+        <section class="gallery-section">
+
+            <p class="eyebrow">KENANGAN INDAH</p>
+
+            <h2>Galeri Foto</h2>
+
+            <p class="intro">
+                Beberapa momen kebahagiaan yang ingin kami bagikan
+                bersama keluarga dan sahabat.
+            </p>
+
+            <div class="gallery">
+
+                <img
+                    src="assets/galeri-1.jpg"
+                    alt="Galeri foto wisuda pertama"
+                    loading="lazy"
+                >
+
+                <img
+                    src="assets/galeri-2.jpg"
+                    alt="Foto bersama keluarga"
+                    loading="lazy"
+                >
+
+                <img
+                    src="assets/galeri-3.jpg"
+                    alt="Momen ulang tahun"
+                    loading="lazy"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMASI ACARA
+             ========================= -->
+        <div class="info">
+
+            <div class="info-item">
+                <span>📅</span>
+
+                <section>
+                    <strong>Hari / Tanggal</strong>
+                    <p id="tanggalAcara">
+                        Informasi tanggal acara
+                    </p>
+                </section>
+            </div>
+
+
+            <div class="info-item">
+                <span>⏰</span>
+
+                <section>
+                    <strong>Waktu</strong>
+                    <p id="waktuAcara">
+                        Informasi waktu acara
+                    </p>
+                </section>
+            </div>
+
+
+            <div class="info-item">
+                <span>📍</span>
+
+                <section>
+                    <strong>Tempat</strong>
+                    <p id="tempatAcara">
+                        Informasi tempat acara
+                    </p>
+                </section>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             TOMBOL AKSI
+             ========================= -->
+        <div class="actions">
+
+            <a
+                class="button"
+                id="mapsButton"
+                href="#"
+                target="_blank"
+                rel="noopener"
+            >
+                Buka Google Maps
+            </a>
+
+            <a
+                class="button outline"
+                id="rsvpButton"
+                href="#"
+            >
+                Konfirmasi via WhatsApp
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             PENUTUP
+             ========================= -->
+        <p class="closing">
+            Kehadiran dan doa restu Bapak/Ibu/Saudara/i
+            merupakan kebahagiaan bagi kami.
+
+            <br>
+
+            <strong>Tuhan memberkati.</strong>
+        </p>
+
+    </section>
+
+
+    <footer>
+        Undangan Digital • Syukuran Wisuda dan Ulang Tahun
+    </footer>
+
+</main>
+
+<!-- FILE JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
